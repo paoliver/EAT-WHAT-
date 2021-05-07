@@ -36,7 +36,7 @@
         </aside>
     {% endif %}
     {% if sidebar_categorys %}
-        <aside id="su_siloed_terms-2" class="widget widget_su_siloed_terms"><h3 class="widget-title">分类目录</h3>
+        <aside id="su_siloed_terms-2" class="widget widget_su_siloed_terms"><h3 class="widget-title">筛选</h3>
             <ul>
                 {% for c in sidebar_categorys %}
                     <li class="cat-item cat-item-184"><a href={{ c.get_absolute_url }}>{{ c.name }}</a>
@@ -46,7 +46,7 @@
         </aside>
     {% endif %}
     {% if sidebar_comments and  open_site_comment %}
-        <aside id="ds-recent-comments-4" class="widget ds-widget-recent-comments"><h3 class="widget-title">近期评论</h3>
+        <aside id="ds-recent-comments-4" class="widget ds-widget-recent-comments"><h3 class="widget-title">新评价</h3>
             {% comment %}<ul class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1"
             data-show-title="1" data-show-admin="1" data-avatar-size="30" data-excerpt-length="70"></ul>{% endcomment %}
             <ul id="recentcomments">
@@ -62,7 +62,7 @@
         </aside>
     {% endif %}
     {% if recent_articles %}
-        <aside id="recent-posts-2" class="widget widget_recent_entries"><h3 class="widget-title">近期文章</h3>
+        <aside id="recent-posts-2" class="widget widget_recent_entries"><h3 class="widget-title">新店铺</h3>
             <ul>
 
                 {% for a in  recent_articles %}
@@ -104,16 +104,6 @@
             </div>
         </aside>
     {% endif %}
-    <aside id="text-2" class="widget widget_text"><h3 class="widget-title">欢迎您star或者fork本站源代码</h3>
-        <div class="textwidget">
-
-            <p><a href="https://github.com/liangliangyy/DjangoBlog" rel="nofollow"><img
-                    src="https://resource.lylinux.net/img.shields.io/github/stars/liangliangyy/djangoblog.svg?style=social&amp;label=Star"
-                    alt="GitHub stars"></a> <a href="https://github.com/liangliangyy/DjangoBlog" rel="nofollow"><img
-                    src="https://resource.lylinux.net/img.shields.io/github/forks/liangliangyy/djangoblog.svg?style=social&amp;label=Fork"
-                    alt="GitHub forks"></a></p>
-        </div>
-    </aside>
     <aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">功能</h3>
         <ul>
             <li><a href="/admin/" rel="nofollow">管理站点</a></li>

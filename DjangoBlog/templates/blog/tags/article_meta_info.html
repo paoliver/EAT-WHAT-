@@ -3,7 +3,7 @@
 {% with article.id|add:user.is_authenticated as cachekey %}
     {% cache 36000 metainfo cachekey %}
         <footer class="entry-meta">
-            本条目发布于<a href="{{ article.get_absolute_url }}" title="{% datetimeformat article.pub_time %}"
+            店铺上传于<a href="{{ article.get_absolute_url }}" title="{% datetimeformat article.pub_time %}"
                      itemprop="datePublished" content="{% datetimeformat article.pub_time %}"
                      rel="bookmark">
 
@@ -27,10 +27,10 @@
                     标签。
                 {% endif %}
             {% endif %}
-            <span class="by-author">作者是
+            <span class="by-author">发布者是
         <span class="author vcard">
             <a class="url fn n" href="{{ article.author.get_absolute_url }}"
-               title="查看所有由{{ article.author.username }}发布的文章"
+               title="查看所有由{{ article.author.username }}上传的餐厅"
                rel="author">
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
 
